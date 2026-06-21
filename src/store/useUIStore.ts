@@ -13,9 +13,11 @@ export const useUIStore = create<UIState>((set) => ({
   isMobileMenuOpen: false,
 
   toggleTheme: () =>
-    set((state) => ({
-      theme: state.theme === "light" ? "dark" : "light",
-    })),
+    set((state) => {
+      const next = state.theme === "light" ? "dark" : "light";
+      document.documentElement.classList.toggle("dark", next === "dark");
+      return { theme: next };
+    }),
 
   toggleMobileMenu: () =>
     set((state) => ({ isMobileMenuOpen: !state.isMobileMenuOpen })),
