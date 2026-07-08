@@ -4,20 +4,16 @@ import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import SkillsSection from "@/components/sections/SkillsSection";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        <ThemeToggle />
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <BlogSection />
-        <ContactSection />
-      </main>
-    </div>
+    <main className="mt-16">
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <SkillsSection />
+      <BlogSection />
+      <ContactSection />
+    </main>
   );
 }

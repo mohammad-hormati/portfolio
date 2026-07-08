@@ -6,11 +6,14 @@ interface UIState {
   toggleTheme: () => void;
   toggleMobileMenu: () => void;
   closeMobileMenu: () => void;
+  activeSection: string;
+  setActiveSection: (id: string) => void;
 }
 
 export const useUIStore = create<UIState>((set) => ({
   theme: "light",
   isMobileMenuOpen: false,
+  activeSection: "hero",
 
   toggleTheme: () =>
     set((state) => {
@@ -23,4 +26,6 @@ export const useUIStore = create<UIState>((set) => ({
     set((state) => ({ isMobileMenuOpen: !state.isMobileMenuOpen })),
 
   closeMobileMenu: () => set({ isMobileMenuOpen: false }),
+
+  setActiveSection: (id) => set({ activeSection: id }),
 }));
