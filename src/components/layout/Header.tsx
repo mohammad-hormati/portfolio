@@ -4,6 +4,7 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 import { Logo } from "../Logo";
 import { ThemeToggle } from "../ThemeToggle";
 import { DesktopNav } from "./DesktopNav";
+import MobileMenuButton from "./MobileMenuButton";
 
 export default function Header() {
   useActiveSection();
@@ -14,7 +15,7 @@ export default function Header() {
         <DesktopNav />
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          {/* <MobileMenuButton />       */}
+          <MobileMenuButton />
         </div>
       </nav>
     </header>
