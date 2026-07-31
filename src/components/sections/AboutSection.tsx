@@ -75,8 +75,8 @@ export default function AboutSection() {
           <div>
             <FadeIn delay={0.15}>
               <h2 className="text-2xl sm:text-4xl font-semibold tracking-tight text-balance">
-                Senior Frontend Developer,
-                <span className="text-brand"> full-stack capable.</span>
+                Senior Frontend Developer
+                <span className="text-brand"> Full-Stack Capable</span>
               </h2>
             </FadeIn>
 
