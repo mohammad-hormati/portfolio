@@ -2,7 +2,7 @@
 
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { Logo } from "../Logo";
-import { ThemeToggle } from "../ThemeToggle";
+import { ThemeToggle } from "../ui/ThemeToggle";
 import { DesktopNav } from "./DesktopNav";
 import MobileMenuButton from "./MobileMenuButton";
 
