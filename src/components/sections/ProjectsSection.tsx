@@ -2,7 +2,7 @@
 
 import { FadeIn } from "@/components/motion/FadeIn";
 import { projects } from "@/config/projects";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./components/ProjectCard";
 
 export default function ProjectsSection() {
   return (

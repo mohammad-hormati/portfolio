@@ -1,7 +1,7 @@
 "use client";
 
 import { useActiveSection } from "@/hooks/useActiveSection";
-import { Logo } from "../Logo";
+import { Logo } from "../ui/Logo";
 import { ThemeToggle } from "../ui/ThemeToggle";
 import { DesktopNav } from "./DesktopNav";
 import MobileMenuButton from "./MobileMenuButton";

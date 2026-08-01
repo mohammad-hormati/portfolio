@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Logo } from "@/components/Logo";
+import { Logo } from "@/components/ui/Logo";
 import { MdEmail, MdCall } from "react-icons/md";
 import {
   FaTwitter,

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FadeIn } from "@/components/motion/FadeIn";
-import TypingCode from "../TypingCode";
+import TypingCode from "./components/TypingCode";
 
 export default function HeroSection() {
   return (
