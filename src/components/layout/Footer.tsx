@@ -1,34 +1,30 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
-import { MdEmail, MdCall } from "react-icons/md";
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaTelegramPlane,
-} from "react-icons/fa";
+import { Mail, Phone } from "lucide-react";
+import { SiGithub, SiX } from "react-icons/si";
+import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 
 import { navLinks } from "@/config/nav";
 
 const socialLinks = [
   {
     label: "GitHub",
-    href: "https://github.com/your-username",
-    icon: FaGithub,
+    href: "https://github.com/mhmdhrmti",
+    icon: SiGithub,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/your-username",
+    href: "https://linkedin.com/in/mohamad-hormati-807bb219b",
     icon: FaLinkedin,
   },
   {
-    label: "Twitter",
-    href: "https://twitter.com/your-username",
-    icon: FaTwitter,
+    label: "X",
+    href: "https://x.com/mhmdhrmti",
+    icon: SiX,
   },
   {
     label: "Telegram",
-    href: "https://telegram.com/your-username",
+    href: "https://t.me/mhmdhrmti",
     icon: FaTelegramPlane,
   },
 ];
@@ -59,10 +55,10 @@ export default function Footer() {
           <div className="flex flex-col items-center sm:items-start gap-6">
             <div className="flex flex-col items-center sm:items-start gap-2">
               <p className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MdEmail className="w-5 h-5" /> m.hormati1996@gmail.com
+                <Mail className="w-4 h-4 text-brand" /> m.hormati1996@gmail.com
               </p>
               <p className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MdCall className="w-5 h-5" /> +989203013260
+                <Phone className="w-4 h-4 text-brand" /> +989203013260
               </p>
             </div>
             <div className="flex items-center gap-4">
