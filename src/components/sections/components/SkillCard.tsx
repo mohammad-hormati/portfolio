@@ -19,15 +19,13 @@ export default function SkillCard({
           group.featured ? "" : "h-full"
         }`}
       >
-        {group.featured && (
-          <div
-            className="absolute inset-x-0 top-0 h-0.5"
-            style={{
-              background:
-                "linear-gradient(90deg, transparent, var(--brand), transparent)",
-            }}
-          />
-        )}
+        <div
+          className="absolute inset-x-0 top-0 h-0.5"
+          style={{
+            background:
+              "linear-gradient(90deg, transparent, var(--brand), transparent)",
+          }}
+        />
 
         <h3 className="font-mono text-xs font-medium uppercase tracking-widest text-muted-foreground">
           {group.title}
